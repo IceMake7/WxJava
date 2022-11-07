@@ -878,10 +878,10 @@ public class WxCpExternalContactServiceImpl implements WxCpExternalContactServic
   }
 
   @Override
-  public WxCpInterceptRuleResultResp updateInterceptRule(WxCpInterceptRuleResp ruleResp) throws WxErrorException {
+  public WxCpInterceptRuleResultResp updateInterceptRule(WxCpInterceptRuleUpdateResp ruleUpdateResp) throws WxErrorException {
     return WxCpInterceptRuleResultResp
       .fromJson(this.mainService.post(this.mainService.getWxCpConfigStorage().getApiUrl(UPDATE_INTERCEPT_RULE),
-        ruleResp.toJson()));
+        ruleUpdateResp.toJson()));
   }
 
   @Override

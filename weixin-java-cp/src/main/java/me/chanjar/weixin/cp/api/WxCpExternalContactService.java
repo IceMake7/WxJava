@@ -1078,11 +1078,11 @@ public interface WxCpExternalContactService {
    * 请求方式：POST(HTTPS)
    * 请求地址：https://qyapi.weixin.qq.com/cgi-bin/externalcontact/update_intercept_rule?access_token=ACCESS_TOKEN
    * <pre>
-   * @param ruleResp the rule resp
+   * @param ruleUpdateResp the rule resp
    * @return the wx cp intercept rule result resp
    * @throws WxErrorException the wx error exception
    */
-  WxCpInterceptRuleResultResp updateInterceptRule(WxCpInterceptRuleResp ruleResp) throws WxErrorException;
+  WxCpInterceptRuleResultResp updateInterceptRule(WxCpInterceptRuleUpdateResp ruleUpdateResp) throws WxErrorException;
 
   /**
    * <pre>
