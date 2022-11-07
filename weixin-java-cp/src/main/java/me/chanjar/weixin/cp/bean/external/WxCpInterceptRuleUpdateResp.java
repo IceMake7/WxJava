@@ -28,7 +28,7 @@ public class WxCpInterceptRuleUpdateResp {
   private List<String> wordList;
   @SerializedName("intercept_type")
   private int interceptType;
-  @SerializedName("semantics_list")
+  @SerializedName("extra_rule")
   private ExtraRule extraRule;
   @SerializedName("add_applicable_range")
   private AddApplicableRange addApplicableRange;
